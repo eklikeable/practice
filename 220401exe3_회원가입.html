@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#127803;&nbsp;회원가입 양식&nbsp;&#127803;</title>
+</head>
+<body>
+  <form>
+    <table width="400px">
+    <tr bgcolor="#BDB76B" height="50">
+      <th colspan="2" align="left">Step1 : 아이디/비번 입력</th>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">아이디 :</td>
+      <td>
+        <input type="text" placeholder="4-16자 이내" autofocus>
+        <button type="button">ID중복확인</button>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">비밀번호 :</td>
+      <td><input type="password"></td>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">비밀번호 확인 :</td>
+      <td><input type="password"></td>
+    </tr>  
+    <tr bgcolor="#BDB76B" height="50">
+      <th colspan="2" align="left">Step2 : 개인정보</th>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">성별 :</td>
+      <td>
+          남<input type="radio" name="gender" value="men">
+          여<input type="radio" name="gender" value="women">
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">혈액형 :</td>
+      <td>
+        <select>
+          <option name="bloodtype" value="a">A형</option>
+          <option name="bloodtype" value="b">B형</option>
+          <option name="bloodtype" value="o">O형</option>
+          <option name="bloodtype" value="ab">AB형</option>
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">생일 :</td>
+      <td><input type="date"></td>
+    </tr> 
+    <tr bgcolor="#BDB76B" height="50">
+      <th colspan="2" align="left">Step3 : 선호도</th>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">취미 :</td>
+      <td>
+        독서<input type="checkbox" checked>
+        영화감상<input type="checkbox">
+        운동<input type="checkbox">
+      </td>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td align="right">좋아하는 색깔 :</td>
+      <td><input type="color"></td>
+    </tr>
+    <tr bgcolor="#BDB76B" height="50">
+      <th colspan="2" align="left">Step4 : 적고싶은말</th>
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td colspan="2">
+        <textarea cols="56" rows="5" placeholder="익명으로 작성됩니다."></textarea>
+      </td>     
+    </tr>
+    <tr bgcolor="#FAFAD2" height="35">
+      <td colspan="2" align="center">
+       <input type="submit">
+       <input type="reset">
+      </td>
+    </tr>
+    </table>
+  </form>
+</body>
+</html>

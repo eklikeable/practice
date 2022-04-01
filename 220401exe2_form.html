@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#" method="get">
+    ID : <input type="text" name="userID" placeholder="ID를 입력하세요" autofocus><br>
+    PW : <input type="password" name="userPW" placeholder="비밀번호를 입력하세요" maxlength="10"><br>
+    주소 : <input type="text" name="userADD" value="6강의장" readonly>
+
+    <br><br>
+    <p>좋아하는 커피를 모두 골라주세요</p> 
+    아메리카노<input type="checkbox" name="coffee" value="americano" checked>
+    카페라떼<input type="checkbox" name="coffee" value="latte">
+
+    <br><br>
+    <p>성별을 골라주세요</p>
+    남성 <input type="radio" name="gender" value="men">
+    여성 <input type="radio" name="gender" value="women" checked>
+
+    <br><br>
+    <!-- select태그 : 드랍박스 (input 태그 아님!)-->
+    <select>
+      <option value="naver">네이버</option>
+      <option value="daum">다음</option>
+      <option value="google">구글</option>
+    </select>
+    <br><br>
+    <input type="file"><!--윈도우 탐색기 열림-->
+    <br>
+    <input type="color"><!--색상 파레트 열림-->
+    <br>
+    <input type="number">
+    <br>
+    <input type="range">
+    <br>
+    <input type="date">
+    <br>
+    <input type="month">
+    <br>
+    <input type="week">
+  
+    <br><br>
+    <input type="submit"><!--submit/reset은 자동으로 버튼으로 생성됨. 디자인은CSS에서 관리-->
+    <input type="reset">
+    <input type="button" value="문의하기">
+    <!-- submit/reset까지 form태그 안쪽에-->
+  </form>
+  <br>
+  <form>
+    <input type="button" value="공지사항 확인" onclick="window.open('220401exe1.html')">
+  </form>
+</body>
+</html>
