@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form/Anchor review</title>
+  <style> form{line-height:2em;}</style>
+</head>
+<body>
+  <h1>프런트엔드 개발자 지원서</h1>
+  <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+  <hr>
+  <form>
+    <h4>개인 정보</h4>
+    <ul>
+      <!--li에 label을 달면 앞에 불릿이 붙지 않는다!
+      dl : 용어나 문장에 대한 정의리스트로 자동으로 들여쓰기가 된다
+      dt : 정의 제목 , dd 정의 내용-->
+      <dt>이름 <input type="text" placeholder="공백 없이 입력하세요"></dt>
+      <dt>연락처 <input type="Tel"></dt>
+    </ul>
+    <h4>지원 분야</h4>
+    <ul>
+      <dt><input type="radio" name="position" value="pub">웹 퍼블리싱</dt>
+      <dt><input type="radio" name="position" value="app">웹 애플리케이션 개발</dt>
+      <dt><input type="radio" name="position" value="env">개발 환경 개선</dt>
+    </ul>
+    <h4>지원 동기</h4>
+    <textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+    <br>
+    <button type="submit">접수하기</button>
+    <button type="reset">다시쓰기</button>
+    <h4>개인정보</h4>
+				<ul>
+					 <li>
+						 <!-- <input>태그 앞 뒤에 <label>과 </label> 태그로 묶어도 됩니다 -->
+							<label for="sname">이름<input type="text" id="sname" autofocus placeholder="공백없이 입력하세요"></label>
+					</li>
+					<li>
+							<label for="snumber"> 연락처 </label>
+							<input type="text" id="snum">
+					 </li>
+  </form>
+</body>
+</html>
