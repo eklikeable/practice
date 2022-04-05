@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector priority</title>
+
+    <style>
+        
+                /* 4. 아이디선택자 => # 기호로 표시 */
+        #rose{
+            color: rgb(255, 0, 0);
+        }
+
+
+        /* 1. 전체선택자 => * 로 표시  */
+        *{
+            color: rgba(14, 0, 145, 0.692);
+        }
+
+        /* 2. 태그선택자 => 태그 이름으로 표시 */
+        li{
+            color: rgb(0, 0, 0);
+            list-style-type: square;
+        }
+
+        /* 선택자들을 구분해서 지정해줘야하는경우 
+        => 클래스 / 아이디 개념
+        
+        클래스 => 중복 가능, 재사용성 뛰어남
+        아이디 => 중복 불가능, 한 문서 당 1번만         
+        */
+
+        /* 3. 클래스선택자 => . 기호로 표시  */
+        .food{
+            color: rgb(129, 15, 145);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+
+    <h1 class="food" id="foodTitle">지금 먹고싶은 음식</h1>
+    <ul>
+        <li class="food" id="mara">마라탕</li>
+        <li class="food" id="rose">로제떡볶이</li>
+        <li class="food" id="galbi">철판닭갈비</li>
+        <li class="food" id="chicken">치킨</li>
+    </ul>
+</body>
+</html>
