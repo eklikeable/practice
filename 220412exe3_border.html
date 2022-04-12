@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델</title>
+	<style>
+		#circle {
+			border-radius:50%;  /* 테두리를 원으로 */
+		}    
+		.cir {
+			border-radius: 50% 50% 0% 0%;
+			border: 30px inset rgb(248, 135, 197) ;
+		}
+
+    div { 
+      width:100px;
+      height: 100px;
+      display: inline-block;
+    }
+    #redBox {
+      background-color: red;
+      border-radius: 50% 0%;
+    }
+    #blueBox {
+      background-color: blue;
+      border-radius: 0% 50%;
+    }
+    #greenBox {
+      background-color: green;
+      border-radius: 10% 10% 40% 40%;
+    }
+    #grayBox {
+      background-color: grey;
+      border-radius: 30%;
+    }
+	</style>
+</head>
+<body>
+	<img src="../수업자료/Day12_0412_화/08/images/photo.jpg">
+	<img id="circle" src="../수업자료/Day12_0412_화/08/images/photo.jpg">
+	<img class="cir" src="../수업자료/Day12_0412_화/08/images/bear.jpg">
+  <br>
+  <div id="redBox"></div>
+  <div id="blueBox"></div>
+  <div id="greenBox"></div>
+  <div id="grayBox"></div>
+</body>
+</html>
