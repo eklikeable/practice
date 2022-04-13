@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex-basic-mission-01</title>
+    <style>
+      body { margin:0 ;}
+        .container {
+            display: flex;
+    
+        }
+        .box {
+            border: 5px solid red ;
+            border-right:0;
+            width: 33.3333333%;
+            height: 200px;
+            display: flex;
+            margin:auto;
+
+            
+        }
+        .box div {
+            width: 50%;
+            margin-right: auto;
+        }
+        .box div:nth-child(1) {
+            background-color: yellow;
+        }
+        .box div:nth-child(2) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
