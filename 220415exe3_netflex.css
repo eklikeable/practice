@@ -1,0 +1,96 @@
+/* XEICON CDN  */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  margin:0;
+  line-height: 1.6em;
+  font-size: 26px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  overflow: hidden;
+  padding: 35px 55px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.logo img {
+  width: 170px;
+  float: left;
+
+}
+.signin {
+  float: right;
+
+}
+.btn-signin {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+}
+/* Common CSS */
+section {
+  border-bottom: 10px solid #333;
+  position: relative;
+
+}
+/* Section : Welcome */
+.welcome {
+  height: 80vh;
+  background-image: url(images/0101.jpg); /* 배경이미지경로확인*/
+  background-size: cover;
+  position: relative;
+}
+.welcome::before{
+  content: ' ';
+  position:absolute;
+  background-color: rgb(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  ;
+}
+/* Heading */
+.heading {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+}
+.heading h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin: 0;
+}
+.heading h5 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 20px;
+}
+.heading p {
+  font-size: 20px;
+}
+
+/* Getstarted */
