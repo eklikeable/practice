@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>평수 계산기</title>
+</head>
+<body>
+  <h1>내 방은 몇 평일까요?</h1>
+  <script>
+    var memNum = prompt("가로너비는 몇 m인가요?")
+    var colNum = prompt("세로너비는 몇 m인가요?")
+    const stan = 3.305785
+    var peng = ((memNum * colNum)/stan)
+
+    if (peng > 0)
+      rowNum = parseInt(peng);
+    else
+      alert("다시 확인해 주세요.")
+
+    document.write( rowNum + "평 입니다.")
+  </script>
+</body>
+</html>
