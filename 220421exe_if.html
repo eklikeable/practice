@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const userNumber = prompt("숫자를 입력하세요")
+
+    function numGame() {
+      if(userNumber === "") {
+        alert("숫자가 입력되지 않았습니다.");
+      }
+      else if (userNumber === null) {
+        alert("취소되었습니다");
+      }
+      else if (userNumber % 3 === 0) {
+        alert("3의 배수 입니다")
+      }
+      else if (userNumber % 3 > 0) {
+        alert("3의 배수가 아닙니다")
+      }
+    }
+
+    numGame();
+
+  </script>
+</body>
+</html>
