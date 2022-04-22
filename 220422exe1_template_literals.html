@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+  const name = 'John';
+  const age = 25;
+
+// 1) without template literals
+let str = 'name: ' + name + ', age: ' + age;
+console.log(str);
+
+
+str = `name: ${name}, age: ${age}`;
+console.log(str);
+</script>
+
+<script>
+
+  function Item(title, price) {
+      this.title = title;
+      this.price = price;
+      this.showPrice = function() {
+// 1) without template literals
+        let howmuch = '가격은 '+ price +'원 입니다';
+          console.log(howmuch);
+
+// 2) with template literals
+          // console.log(`가격은 ${price}원 입니다.`);
+        
+      };
+  }
+
+  const item1 = new Item ("안경테", 100000);
+  const item2 = new Item ("우산", 18000);
+  const item3 = new Item ("빗자루", 12000);
+
+  console.log(item1, item2, item3);
+
+  item2.showPrice();
+
+</script>
+
+</body>
+</html>
